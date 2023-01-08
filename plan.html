@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose ypur Plan | Fin tech</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+
+        :root {
+            --dark-Blue: hsl(233, 26%, 24%);
+            --lime-Green: hsl(136, 65%, 51%);
+            --bright-Cyan: hsl(192, 70%, 51%);
+
+            --grayish-Blue: hsl(233, 8%, 62%);
+            --light-Grayish-Blue: hsl(220, 16%, 96%);
+            --very-Light-Gray: hsl(0, 0%, 98%);
+            --white: hsl(0, 0%, 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        button {
+            padding: 5px;
+            margin: 5px;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            min-height: 100vh;
+            background-image: linear-gradient(90deg,
+                    var(--lime-Green),
+                    var(--bright-Cyan));
+        }
+
+        body .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 40px 0;
+        }
+
+        body .container .card {
+            position: relative;
+            min-width: 320px;
+            height: 440px;
+            box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+                inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+                5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            margin: 30px;
+            transition: 0.5s;
+        }
+
+        body .container .card:nth-child(1) .box .content a {
+            background: #2196f3;
+        }
+
+        body .container .card:nth-child(2) .box .content a {
+            background: #e91e63;
+        }
+
+        body .container .card:nth-child(3) .box .content a {
+            background: #15885e;
+        }
+
+        body .container .card .box {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            bottom: 20px;
+            background: white;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            transition: 0.5s;
+        }
+
+        body .container .card .box:hover {
+            transform: translateY(-50px);
+        }
+
+        body .container .card .box:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        body .container .card .box .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        body .container .card .box .content h2 {
+            position: absolute;
+            top: -10px;
+            right: 30px;
+            font-size: 8rem;
+            color: rgba(255, 255, 255, 0.1);
+        }
+
+        body .container .card .box .content h3 {
+            font-size: 1.8rem;
+            color: black;
+            z-index: 1;
+            transition: 0.5s;
+            margin-bottom: 15px;
+        }
+
+        body .container .card .box .content p {
+            font-size: 1rem;
+            font-weight: 300;
+            color: black;
+            z-index: 1;
+            transition: 0.5s;
+        }
+
+        body .container .card .box .content a {
+            position: relative;
+            display: inline-block;
+            padding: 8px 20px;
+            background: black;
+            border-radius: 5px;
+            text-decoration: none;
+            color: rgb(8, 8, 8);
+            margin-top: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transition: 0.5s;
+        }
+
+        body .container .card .box .content a:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+            background: #fff;
+            color: white;
+        }
+
+        h4 {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CHOOSE YOUR PLAN</h1>
+    <div class="container">
+        <div class="card">
+            <div class="box">
+                <div class="content">
+                    <h3>Invoice Plan</h3>
+                    <h4>₹99/month</h4>
+                    <button>Free Trial</button><br>
+                    <p><b>Perfect for Businesses who want to manage Invoices only</b><br>
+                        ✔ Create Invoices <br>
+                        ✔ Create Simple Bills <br>
+                        ✔ Manage Invoice Payments <br>
+                        ✔ Manage Invoice Customers <br>
+                        ✔ Invoice Reports <br>
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="box">
+                <div class="content">
+                    <h3>GST Plan</h3>
+                    <h4>₹899/month</h4>
+                    <button>Free Trial</button>
+                    <p><b>Perfect for Businesses who want to file GST Returns</b><br>
+                        ✔ GST Filing
+                        1,199 ₹ 899 /Filing </p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="box">
+                <div class="content">
+                    <h3>Standard Plan</h3>
+                    <h4>₹2999/month</h4>
+                    <button>Free Trial</button>
+                    <p><b>Perfect for Businesses who want to manage Accounting & Inventory</b><br>
+                        ✔ All Invoice Plan <br>
+                        ✔ Sales & Purchase Management <br>
+                        ✔ Accounting & Inventory Management <br>
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
