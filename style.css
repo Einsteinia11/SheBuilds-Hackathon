@@ -9,11 +9,7 @@
     --white: hsl(0, 0%, 100%);
   }
   
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
+  
   
   html {
     font-size: 62.5%;
@@ -54,18 +50,18 @@
   
   .header {
     justify-content: space-between;
-    padding: 2rem 4rem;
+    padding: 4rem 2rem;
     background: var(--white);
     position: relative;
     box-shadow: 0 3px 10px #00000025;
   }
   
   .gap-md {
-    gap: 2rem;
+    gap: 3rem;
   }
   
   .gap-lg {
-    gap: 4rem;
+    gap: 8rem;
   }
   
   .nav__bar a {
@@ -187,3 +183,4 @@
       border: none;
     }
   }
+  
